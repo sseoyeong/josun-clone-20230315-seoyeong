@@ -1,0 +1,216 @@
+.topArea {
+    display: table;
+    position: relative;
+
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.topInner {
+    padding: 97px 0px 10px;
+}
+
+.titDep1 {
+    font: 500 46px playfair;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.cont {
+    width: 900px;
+}
+
+.titDep2 {
+    margin-bottom: 8px;
+
+    font-family: playfair;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.categoryTxt{
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+.intList li {
+    display: flex;
+    flex-direction: column;
+}
+
+.intWrap {
+    margin-top: 50px;
+}
+
+.tit {
+    display: inline-block;
+    position: relative;
+}
+
+.tit label {
+    display: inline-block;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.intInner {
+    margin-top: 3px;
+
+    display: inline-block;
+    position: relative;
+}
+
+.intBox {
+    padding: 16px 0px 5px;
+}
+
+.frm {
+    position: relative;
+}
+
+.frm label {
+    display: inline-block;
+    position: relative;
+
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+    padding-left: 10px;
+}
+
+input[type=text] {
+    height: 60px;
+    padding: 8px 13px 0px 0px;
+
+    font-size: 16px;
+    border: solid #ccc;
+    border-width: 0 0 1px 0;
+}
+
+.serve {
+    width: 350px;
+}
+
+.phoneInp {
+    margin-bottom: 50px;
+}
+
+.phoneInp .dash {
+    position: relative;
+    display: inline-block;
+
+    text-align: center;
+
+    width: 45px;
+}
+
+.serveNum {
+    width: 200px;
+    text-align: center;
+}
+
+.rCont {
+    position: absolute;
+
+    margin-top: 300px;
+
+    top: 0;
+    right: 0;
+    width: 400px;
+}
+
+.toggleOn {
+    padding: 34px 40px 28px;
+
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.listTit {
+    font-size: 15px;
+    color: #989442;
+
+    vertical-align: top;
+}
+
+.price {
+    display: block;
+    padding-bottom: 12px;
+
+    color: black;
+    font-size: 27px;
+    line-height: 1;
+    font-family:serif;
+}
+
+.toggleCount {
+    position: relative;
+}
+
+.toggleInner {
+    padding: 13px 0 0;
+
+    font-size: 14px;
+}
+
+.designScroll{
+    position: relative;
+}
+
+.optionTotal ul li {
+    justify-content: space-between;
+}
+
+.rfData {
+    float: right;
+    text-align: right;
+}
+
+.infoData {
+    margin-top: 25px;
+    padding-top: 25px;
+
+    border-top: 1px dashed #ccc;
+}
+
+.totalCount {
+    position: relative;
+    padding: 81px 0 20px;
+}
+
+.txt {
+    font-size: 20px;
+}
+
+.subPrice {
+    position: absolute;
+    display: inline-block;
+
+    bottom: 14px;
+    right: 0;
+    
+    font-weight: 600;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.btnArea button {
+    width: 100%;
+    height: 45px;
+
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+}
+
+.btnArea button:hover {
+    background-color: white;
+    color: black;
+}

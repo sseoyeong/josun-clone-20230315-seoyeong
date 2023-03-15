@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="header-container">
+                <div class="header-left-container">
+                    <div class="nav-menu-button">
+                        <img class="nav-menu-button-link" src="/static/images/btn_menu.png" alt="menu">
+                    </div>
+                    <div class="main-site-logo">
+                        <div class="site-logo">JOSUN HOTELS & RESORTS</div>
+                    </div>
+                    <div class="find-hotel-button">
+                        <div class="find-button">상품찾기
+                            <img src="/static/images/btn_find.png" alt="더보기">
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right-container">
+                    <ul>
+                        <li><a class="header-login-button" href="/templates/account/login.html">로그인</a></li>
+                        <li><a class="header-regist-button" href="/templates/account/register.html">회원가입</a></li>
+                        <li><a class="header-reserve-button" href="">예약확인</a></li>
+                        <button type="button" class="reserveBtn">
+                            <a href="/templates/booking/booking.html">RESERVATION</a>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+            <nav class="nav-invisible">
+                <div class="site-nav-button">
+                    <div class="menu-button">MY PAGE</div>
+                    <a class="site-nav-child-button" href="">MY PAGE</a>
+                    <a class="site-nav-child-button" href="">MY POINT</a>
+                    <a class="site-nav-child-button" href="">MY COUPON</a>
+                    <a class="site-nav-child-button" href="">예약확인</a>
+                    <a class="site-nav-child-button" href="">관심리스트</a>
+                    <a class="site-nav-child-button" href="">개인정보관리</a>
+                    <div class="menu-button-n">CUSTOMER SERVICE</div>
+                    <a class="site-nav-child-button" href="">Q&A</a>
+                    <a class="site-nav-child-button" href="">FAQ</a>
+                    <a class="site-nav-child-button" href="">GIFT CARD</a>
+                </div>
+            </nav>
+            <script src="/static/js/header/header.js"></script>
+        </header>
+        <main>
+            <div class="main">
+                <h1 class="account-title">SIGN IN</h1>
+                <p class="pageGuide">머무는 모든 순간이 특별해집니다.</p>
+                <div class="account-container">
+                    <section class="account-login">
+                        <h2 class="account-subtitle">이메일 로그인</h2>
+                        <hr>
+                        <input type="id" class="account-input" name="username" placeholder="이메일" required>
+                        <input type="password" class="account-input" name="password" placeholder="비밀번호" required>
+                        <button type="submit" class="btn account-button">로그인</button>
+                        <p class="loginGuide">CLUB JOSUN 회원이 되시면 더 많은 혜택이 있습니다.</p>
+                    </section>
+                    <section class="account-reserve">
+                        <h2 class="account-subtitle">회원가입</h2>
+                        <hr>
+                        <p class="reserveGuide">회원가입을 하시면 빠른 예약과 서비스 등 더 많은 혜택이 기다리고 있습니다.</p>
+                        <button type="submit" class="btn account-button">회원가입</button>
+                    </section>
+                </div>
+                <hr>
+                <div class="submain">
+                    <p class="subGuide">*이용자 비밀번호 5회 연속 오류시 계정이 잠기게 됩니다.</p>
+                    <p class="subGuide">*오프라인 회원의 경우 온라인 회원가입 후 계정연동이 가능합니다.</p>
+                    <p class="subGuide">*유선 혹은 여행사를 통한 예약은 온라인 조회가 불가하오니 예약실로 문의 부탁드립니다.</p>
+                    <p class="subGuide">*메리어트 호텔에서 예약하신 경우, 메리어트 사이트에서만 예약 확인이 가능합니다.</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="/static/js/account/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+main {
+    margin-top: 80px;
+}
+
+.main {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.account-title {
+    margin: 0px;
+    padding-top: 100px;
+
+    font: 50px playfair;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.account-container {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    margin-top: 40px;
+}
+
+.account-subtitle {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 300;
+
+    cursor: pointer;
+}
+
+.account-input {
+    height: 60px;
+    margin-bottom: 15px;
+
+    background-color: #f9f9f9;
+}
+
+.account-button {
+    margin-bottom: 15px;
+
+    height: 50px;
+    width: 100%;
+
+    font-weight: 700;
+    color: white;
+    background-color: black;
+}
+
+.account-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.loginGuide {
+    margin: 0px;
+    margin-bottom: 70px;
+
+    font-size: 14px;
+}
+
+.account-reserve {
+    margin-left: 30px;
+
+    width: 512px;
+}
+
+.subGuide {
+    margin: 9px 0px;
+
+    font-size: 12px;
+    color: gray;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 10px;
+
+    width: 100%;
+}

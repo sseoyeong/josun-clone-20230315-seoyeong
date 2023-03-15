@@ -1,0 +1,110 @@
+.header-container {
+    position: fixed;
+    top: 0px;
+    z-index: 11;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 20px;
+
+    width: 100%;
+    height: 80px;
+}
+
+.header-left-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu-button-link {
+    width: 53px;
+    margin: 50px 0px;
+}
+
+.main-site-logo {
+    padding-left: 10px;
+
+    font-size: 25px;
+}
+
+.site-logo {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.find-hotel-button {
+    padding-left: 18px;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.header-right-container ul, li{
+    display: flex;
+}
+
+.header-right-container li {
+    margin: 0px 0px 0px 20px;
+
+    font-size: 15px;
+}
+
+.header-right-container li:hover {
+    opacity: 0.5;
+}
+
+.reserveBtn {
+    margin-left: 20px;
+}
+
+.nav-invisible {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+
+    padding-top: 100px;
+
+    width: 352px;
+    height: 100%;
+
+    background-color: white;
+}
+
+.site-nav-button {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px 20px;
+    padding-left: 20px;
+}
+
+.menu-button {
+    padding-bottom: 18px;
+
+    font-size: 17px;
+    color: darkgoldenrod;
+}
+
+.menu-button-n {
+    padding: 24px 0px 18px 0px;
+
+    font-size: 17px;
+    color: darkgoldenrod;
+}
+
+.site-nav-child-button {
+    margin-bottom: 8px;
+
+    font-size: 18px;
+}
+
+.site-nav-child-button:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
