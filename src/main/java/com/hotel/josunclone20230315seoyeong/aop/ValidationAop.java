@@ -20,7 +20,7 @@ public class ValidationAop {
     @Pointcut("execution(* com.hotel.josunclone20230315seoyeong..*Api.*(..))")
     private void executionPointCut() {}
 
-    @Around("executionPointCut")
+    @Around("executionPointCut()")
     public Object around(ProceedingJoinPoint joinPoint) throws Throwable {
 
         Object[] args = joinPoint.getArgs();
