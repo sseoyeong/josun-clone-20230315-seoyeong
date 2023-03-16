@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reserve page</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="/static/css/header.css">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/reserve.css">
@@ -28,11 +29,11 @@
                 </div>
                 <div class="header-right-container">
                     <ul>
-                        <li><a class="header-login-button" href="/templates/account/login.html">로그인</a></li>
-                        <li><a class="header-regist-button" href="/templates/account/register.html">회원가입</a></li>
+                        <li><a class="header-login-button" href="/account/login">로그인</a></li>
+                        <li><a class="header-regist-button" href="/account/register">회원가입</a></li>
                         <li><a class="header-reserve-button" href="">예약확인</a></li>
                         <button type="button" class="reserveBtn">
-                            <a href="/templates/booking/booking.html">RESERVE</a>
+                            <a href="/booking/booking">RESERVE</a>
                         </button>
                     </ul>
                 </div>
@@ -64,6 +65,11 @@
                         <div class="cont">
                             <h2 class="titDep2">SMART CHOICE</h2>
                             <p class="categoryTxt">DELUXE / 2DOUBLE / STANDARD VIEW</p>
+                            <div class="error error-invisible">
+                                <ul class="error-msg">
+
+                                </ul>
+                            </div>
                             <ul class="intList">
                                 <li>
                                     <div class="intWrap">
@@ -123,11 +129,11 @@
                                         </span>
                                         <span class="dash">ㅡ</span>
                                         <span class="intArea">
-                                            <input type="text" class="serveNum" id="phoneNumber">
+                                            <input type="text" class="serve serveNum" id="phoneNumber">
                                         </span>
                                         <span class="dash">ㅡ</span>
                                         <span class="intArea">
-                                            <input type="text" class="serveNum" id="phoneNumber">
+                                            <input type="text" class="serve serveNum" id="phoneNumber">
                                         </span>
                                     </div>
                                 </li>
@@ -186,5 +192,6 @@
             
         </footer>
     </div>
+    <script src="/static/js/account/reserve.js"></script>
 </body>
 </html>

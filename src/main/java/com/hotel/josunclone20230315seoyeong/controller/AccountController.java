@@ -21,4 +21,14 @@ public class AccountController {
     public String main() {
         return "main/main";
     }
+
+    @GetMapping("/booking/booking")
+    public String booking() {
+        return "booking/booking";
+    }
+
+    @GetMapping("/booking/reserve")
+    public String reserve() {
+        return "booking/reserve";
+    }
 }
