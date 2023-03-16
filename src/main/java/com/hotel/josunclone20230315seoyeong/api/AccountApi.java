@@ -1,5 +1,6 @@
 package com.hotel.josunclone20230315seoyeong.api;
 
+import com.hotel.josunclone20230315seoyeong.aop.annotation.LogAspect;
 import com.hotel.josunclone20230315seoyeong.dto.CMRespDto;
 import com.hotel.josunclone20230315seoyeong.dto.RegisterReqDto;
 import com.hotel.josunclone20230315seoyeong.dto.ReserveReqDto;
@@ -20,12 +21,14 @@ import java.util.Map;
 @RestController
 public class AccountApi {
 
+    @LogAspect
     @PostMapping("/register")
     public ResponseEntity<?> register(@Validated(ValidationSequence.class) @RequestBody RegisterReqDto registerReqDto, BindingResult bindingResult) throws Exception{
 
         return ResponseEntity.created(null).body(new CMRespDto<>("회원가입 성공", registerReqDto));
     }
 
+    @LogAspect
     @PostMapping("/reserve")
     public ResponseEntity<?> reserve(@Validated(ValidationSequence.class) @RequestBody ReserveReqDto reserveReqDto, BindingResult bindingResult) throws Exception{
 

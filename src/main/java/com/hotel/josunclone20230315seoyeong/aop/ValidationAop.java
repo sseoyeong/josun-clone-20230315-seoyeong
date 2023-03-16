@@ -40,8 +40,6 @@ public class ValidationAop {
 
             List<FieldError> fieldErrors = bindingResult.getFieldErrors();
             for (FieldError fieldError : fieldErrors) {
-                System.out.println("필드명: " + fieldError.getField());
-                System.out.println("에러 메세지: " + fieldError.getDefaultMessage());
                 errorMap.put(fieldError.getField(), fieldError.getDefaultMessage());
             }
 
