@@ -1,7 +1,9 @@
 package com.hotel.josunclone20230315seoyeong.dto;
 
+import com.hotel.josunclone20230315seoyeong.domain.User;
 import com.hotel.josunclone20230315seoyeong.dto.validation.ValidationGroups;
 import lombok.Data;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -28,4 +30,14 @@ public class RegisterReqDto {
     @Size(min = 8, max = 12, message = "비밀번호는 8자부터 12자까지 입력 가능합니다", groups = ValidationGroups.SizeGroup.class)
     @Pattern(regexp = "^(?=.*[a-zA-Z])(?=.*\\d)(?=.*[~!@#$%^&*_])[a-zA-Z\\d-~!@#$%^&*_]*$", message = "비밀번호는 특수기호, 영문, 숫자를 모두 포함해야합니다", groups = ValidationGroups.PatternCheckGroup.class)
     private String password;
+
+    public User toEntity() {
+        return User.builder()
+                .password(new BCryptPasswordEncoder().encode(password)) // 비밀번호 암호화
+                .name(familyName + firstName)
+                .email(email)
+                .role_id(1)
+                .build();
+    }
+
 }

@@ -1,6 +1,7 @@
 package com.hotel.josunclone20230315seoyeong.api.advice;
 
 import com.hotel.josunclone20230315seoyeong.dto.CMRespDto;
+import com.hotel.josunclone20230315seoyeong.exception.CustomInternalServerErrorException;
 import com.hotel.josunclone20230315seoyeong.exception.CustomValidationException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.beanvalidation.CustomValidatorBean;
@@ -15,5 +16,10 @@ public class RestControllerExceptionHandler {
     @ExceptionHandler(CustomValidationException.class)
     public ResponseEntity<?> validationErrorException(CustomValidationException e) {
         return ResponseEntity.badRequest().body(new CMRespDto<>(e.getMessage(), e.getErrorMap()));
+    }
+
+    @ExceptionHandler(CustomInternalServerErrorException.class)
+    public ResponseEntity<?> internalServerErrorException(CustomInternalServerErrorException e) {
+        return ResponseEntity.internalServerError().body(new CMRespDto<>(e.getMessage(), null));
     }
 }

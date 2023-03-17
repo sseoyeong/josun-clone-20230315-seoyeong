@@ -1,5 +1,6 @@
 package com.hotel.josunclone20230315seoyeong.config;
 
+import com.hotel.josunclone20230315seoyeong.security.AuthFailureHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -22,7 +23,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .and()
                 .formLogin()
+                .usernameParameter("email")
                 .loginPage("/account/login")
+                .loginProcessingUrl("/account/login")
+                .failureHandler(new AuthFailureHandler())
                 .defaultSuccessUrl("/index");
     }
 }

@@ -23,12 +23,12 @@ registerButton.onclick = () => {
         contentType: "application/json",  
         data: JSON.stringify(user),        
         dataType: "json",                  
-        success: (response) => {                                                   
-            alert("회원가입 요청 성공");
+        success: (response, textStatus, request) => {    
             console.log(response);
+            const successURI = response.getResponseHeader("Location");
+            location.replace(successURI + "?email=" + response.data);
         },
-        error: (error) => {                 
-            alert("회원가입 요청 실패");
+        error: (error) => {               
             console.log(error.responseJSON.data);
             loadErrorMessage(error.responseJSON.data)
         }
