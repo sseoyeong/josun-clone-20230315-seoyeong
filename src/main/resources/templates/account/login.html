@@ -70,6 +70,13 @@
                                     </ul>
                                 </div>
                             </th:block>
+                            <th:block th:if="${error == 'passwordExpired'}">
+                                <div class="errors">
+                                    <ul>
+                                        <li>비밀번호 인증 5회 초과.</li>
+                                    </ul>
+                                </div>
+                            </th:block>
                             <input type="id" class="account-input" name="email" th:value="${email}" placeholder="이메일" required>
                             <input type="password" class="account-input" name="password" placeholder="비밀번호" required>
                             <button type="submit" class="btn account-button">로그인</button>

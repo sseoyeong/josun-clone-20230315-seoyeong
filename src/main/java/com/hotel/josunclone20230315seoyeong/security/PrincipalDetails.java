@@ -1,11 +1,14 @@
 package com.hotel.josunclone20230315seoyeong.security;
 
 import com.hotel.josunclone20230315seoyeong.domain.User;
+import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
+@Data
 public class PrincipalDetails implements UserDetails {
 
     private User user;
@@ -16,7 +19,9 @@ public class PrincipalDetails implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        Collection<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
+        authorities.add(() -> user.getRole().getName());
+        return authorities;
     }
 
     @Override
