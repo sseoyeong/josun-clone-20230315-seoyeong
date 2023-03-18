@@ -34,7 +34,7 @@ public class RegisterReqDto {
     public User toEntity() {
         return User.builder()
                 .password(new BCryptPasswordEncoder().encode(password)) // 비밀번호 암호화
-                .name(familyName + firstName)
+                .name(firstName + familyName)
                 .email(email)
                 .role_id(1)
                 .build();
